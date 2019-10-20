@@ -1,0 +1,9 @@
+applications:
+- name: cf-golang-example
+  instances: 1
+  memory: 128M
+  disk_quota: 1024M
+  buildpack: go_buildpack
+  stack: cflinuxfs3
+  env:
+    GOPACKAGENAME: CF_GOLANT_TEST

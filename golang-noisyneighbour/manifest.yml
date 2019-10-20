@@ -1,0 +1,10 @@
+applications:
+- name: golang-noisy-neighbour
+  instances: 1
+  memory: 128M
+  disk_quota: 1024M
+  buildpack: go_buildpack
+  stack: cflinuxfs3
+  env:
+    GOPACKAGENAME: GOLANG_NOISY_NEIGHBOUR
+    SLEEP_INTERVAL_MS: 50
